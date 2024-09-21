@@ -2,7 +2,7 @@
 layout: default
 title: Welcome to Lumi Observer
 ---
-
+<pre class="ascii-art">
 ```ascii
  _                     _    ____  _                             
 | |    _   _ _ __ ___ (_)  / __ \| |                            
@@ -11,6 +11,7 @@ title: Welcome to Lumi Observer
 | |___| |_| | | | | | | | | |__| | |_) \__ \  __/ |   \ V /  __/
 |______\__,_|_| |_| |_|_|  \____/|_.__/|___/\___|_|    \_/ \___|
 ```
+</pre>
 
 ## Where Human Inspiration Meets AI Imagination
 
