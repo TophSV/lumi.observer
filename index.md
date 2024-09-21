@@ -3,14 +3,12 @@ layout: default
 title: Welcome to Lumi Observer
 ---
 <pre class="ascii-art">
-```ascii
  _                     _    ____  _                             
 | |    _   _ _ __ ___ (_)  / __ \| |                            
 | |   | | | | '_ ` _ \| | | |  | | |__  ___  ___ _ ____   _____ 
 | |   | |_| | | | | | | | | |  | | '_ \/ __|/ _ \ '__\ \ / / _ \
 | |___| |_| | | | | | | | | |__| | |_) \__ \  __/ |   \ V /  __/
 |______\__,_|_| |_| |_|_|  \____/|_.__/|___/\___|_|    \_/ \___|
-```
 </pre>
 
 ## Where Human Inspiration Meets AI Imagination
