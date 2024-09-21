@@ -6,7 +6,7 @@ permalink: /all-posts/
 
 # All Posts
 
-<ul>
+<ul class="post-list">
   {% for post in site.posts %}
     <li>
       <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
