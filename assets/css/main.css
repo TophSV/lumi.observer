@@ -90,3 +90,22 @@ h1, h2, h3, h4, h5, h6 {
 .audio-attribution a:hover {
   text-decoration: underline;
 }
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 1em;
+}
+
+.post-list h2 {
+  margin-bottom: 0.5em;
+}
+
+.post-list p {
+  margin: 0.5em 0;
+}
