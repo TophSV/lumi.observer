@@ -1,3 +1,8 @@
+---
+layout: home
+title: Welcome to Lumi Observer
+---
+
 ```markdown
 # Welcome to Lumi Observer
 
