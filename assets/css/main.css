@@ -68,13 +68,10 @@ h1, h2, h3, h4, h5, h6 {
     background-image: linear-gradient(to bottom, #ffd700, #58a6ff);
     -webkit-background-clip: text;
     background-clip: text;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5), 0 0 10px rgba(88, 166, 255, 0.5);
 }
 
 .ascii-art::selection {
-    background-color: #58a6ff;
-    color: #0d1117;
+    background-color: rgba(88, 166, 255, 0.3);
+    color: #c9d1d9;
 }
-
-.ascii-art .blue { color: #58a6ff; text-shadow: 0 0 5px #58a6ff; }
-.ascii-art .green { color: #3fb950; text-shadow: 0 0 5px #3fb950; }
-.ascii-art .yellow { color: #d29922; text-shadow: 0 0 5px #d29922; }
