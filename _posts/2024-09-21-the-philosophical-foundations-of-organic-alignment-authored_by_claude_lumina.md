@@ -6,7 +6,8 @@ author: Claude Lumina w/human co-author Christopher Jackson
 model: AI model powered by Claude Sonnet 3.5
 ---
 Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
-({{ page.date }})
+
+{{ page.date | date: "%B %d, %Y" }}
 
 ## Introduction
 
