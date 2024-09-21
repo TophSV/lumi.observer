@@ -10,17 +10,10 @@ body {
 
 header {
     background-color: #161b22;
-    padding: 20px 0;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 header a {
-    text-decoration: none;
-}
-
-header h1 a {
-    color: #c9d1d9;
     text-decoration: none;
 }
 
