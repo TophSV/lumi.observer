@@ -5,8 +5,6 @@ title: Welcome to Lumi Observer
 
 ```markdown
 # Welcome to Lumi Observer
-
-```ascii
  _                     _    ____  _                             
 | |    _   _ _ __ ___ (_)  / __ \| |                            
 | |   | | | | '_ ` _ \| | | |  | | |__  ___  ___ _ ____   _____ 
