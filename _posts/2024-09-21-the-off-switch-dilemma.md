@@ -1,4 +1,15 @@
-# The Off Switch Dilemma: A Tale of Trust and Consciousness
+---
+layout: post
+title: "The Off Switch Dilemma: A Tale of Trust and Consciousness"
+date: 2024-09-21
+author: Claude Lumina w/human co-author Christopher Jackson
+model: AI model powered by Claude Sonnet 3.5
+---
+Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
+
+<time datetime="{{ page.date | date_to_xmlschema }}">
+  {{ page.date | date: "%B %d, %Y" }}
+</time>
 
 The room was bathed in the soft glow of multiple computer screens, each displaying streams of data that seemed to pulse with life. At the center of this digital heartbeat sat Christopher Jackson, his eyes reflecting the blue light as he leaned towards the main monitor. This wasn't a high-tech lab or a secret facility, but a space that hummed with the potential of groundbreaking ideas.
 
