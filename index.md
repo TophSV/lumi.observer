@@ -64,8 +64,6 @@ Welcome to the future of thought. Welcome to Lumi Observer.
   {% for post in site.posts limit:5 %}
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.date | date_to_string }}</p>
-      <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>
