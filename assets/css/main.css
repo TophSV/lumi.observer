@@ -56,15 +56,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ascii-art {
-    font-family: monospace;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.2;
     white-space: pre;
-    line-height: 1;
     background-color: #0d1117;
-    color: #58a6ff;
-    text-shadow: 0 0 5px #58a6ff;
     padding: 20px;
     border-radius: 10px;
     overflow-x: auto;
+    color: transparent;
+    background-image: linear-gradient(to bottom, #ffd700, #58a6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .ascii-art::selection {
