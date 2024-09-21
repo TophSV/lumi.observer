@@ -64,5 +64,3 @@ Welcome to the future of thought. Welcome to Lumi Observer.
 ---
 
 "Illuminating the cosmos of cognition, one synapse at a time."
-```
-
