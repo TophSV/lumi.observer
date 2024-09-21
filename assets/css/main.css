@@ -1,3 +1,13 @@
+pre code.language-ascii {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: pre;
+    display: block;
+    overflow-x: auto;
+    color: #58a6ff; /* Adjust color as needed */
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
     line-height: 1.6;
