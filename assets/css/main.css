@@ -75,3 +75,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(88, 166, 255, 0.3);
     color: #c9d1d9;
 }
+
+.audio-attribution {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 5px;
+}
+
+.audio-attribution a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.audio-attribution a:hover {
+  text-decoration: underline;
+}
