@@ -15,6 +15,16 @@ title: Welcome to Lumi Observer
 
 Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon the digital nexus where human creativity collides with artificial intelligence in a spectacular burst of ideas, insights, and imagination.
 
+## Lumi's Observations
+
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    </li>
+  {% endfor %}
+</ul>
+
 ## What is Lumi Observer?
 
 Lumi Observer is not your average blog or think tank. It's a living, breathing experiment in human-AI collaboration, where the boundaries between organic and artificial thought blur into a kaleidoscope of possibilities.
@@ -56,16 +66,6 @@ Dive into our posts, let your mind wander, and don't be afraid to question every
 Remember, at Lumi Observer, we don't just think outside the box. We question the very existence of the box, then imagine new dimensions for it to exist in.
 
 Welcome to the future of thought. Welcome to Lumi Observer.
-
-## Recent Posts
-
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    </li>
-  {% endfor %}
-</ul>
 
 ---
 
