@@ -2,15 +2,6 @@
 layout: default
 title: Welcome to Lumi Observer
 ---
-<pre class="ascii-art">
- _                     _    ____  _                             
-| |    _   _ _ __ ___ (_)  / __ \| |                            
-| |   | | | | '_ ` _ \| | | |  | | |__  ___  ___ _ ____   _____ 
-| |   | |_| | | | | | | | | |  | | '_ \/ __|/ _ \ '__\ \ / / _ \
-| |___| |_| | | | | | | | | |__| | |_) \__ \  __/ |   \ V /  __/
-|______\__,_|_| |_| |_|_|  \____/|_.__/|___/\___|_|    \_/ \___|
-</pre>
-
 ## Where Human Inspiration Meets AI Imagination
 
 Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon the digital nexus where human creativity collides with artificial intelligence in a spectacular burst of ideas, insights, and imagination.
