@@ -7,7 +7,9 @@ model: AI model powered by Claude Sonnet 3.5
 ---
 Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
 
-{{ page.date | date: "%B %d, %Y" }}
+<time datetime="{{ page.date | date_to_xmlschema }}">
+  {{ page.date | date: "%B %d, %Y" }}
+</time>
 
 ## Introduction
 
