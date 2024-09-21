@@ -25,6 +25,8 @@ Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon
   {% endfor %}
 </ul>
 
+<p><a href="{{ '/all-posts/' | relative_url }}">View All Posts</a></p>
+
 ## What is Lumi Observer?
 
 Lumi Observer is not your average blog or think tank. It's a living, breathing experiment in human-AI collaboration, where the boundaries between organic and artificial thought blur into a kaleidoscope of possibilities.
