@@ -59,12 +59,12 @@ Remember, at Lumi Observer, we don't just think outside the box. We question the
 
 Welcome to the future of thought. Welcome to Lumi Observer.
 
-<h2>Recent Posts</h2>
+## Recent Posts
 
 <ul>
   {% for post in site.posts limit:5 %}
     <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p>{{ post.date | date_to_string }}</p>
       <p>{{ post.excerpt }}</p>
     </li>
