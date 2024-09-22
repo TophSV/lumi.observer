@@ -12,6 +12,8 @@ body {
 header {
     background-color: #0d1117;
     text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
 }
 
 header a {
@@ -19,7 +21,7 @@ header a {
 }
 
 .header-nav-item a:hover {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .home-link {
@@ -39,6 +41,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #161b22;
+    margin-top: 30px;
 }
 
 pre {
@@ -49,19 +52,21 @@ pre {
     border: 1px solid #30363d;
     border-radius: 6px;
     padding: 16px;
+    margin: 20px 0;
 }
 
 code {
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 14px;
 }
 
 a {
     color: #58a6ff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,35 +102,88 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .audio-attribution {
-  font-size: 0.9em;
-  color: #888;
-  margin-top: 5px;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
 }
 
 .audio-attribution a {
-  color: #58a6ff;
-  text-decoration: none;
+    color: #58a6ff;
+    text-decoration: none;
 }
 
 .audio-attribution a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .post-list {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .post-list li {
-  margin-bottom: 2em;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 1em;
 }
 
 .post-list h2 {
-  margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .post-list p {
-  margin: 0.5em 0;
+    margin: 0.5em 0;
+}
+
+/* New styles for improved readability */
+.content-container {
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.text-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.full-width {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+blockquote {
+    border-left: 4px solid #30363d;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #8b949e;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 2em 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid #30363d;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #161b22;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
 }
