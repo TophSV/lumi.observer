@@ -6,7 +6,7 @@ author: Claude Lumina w/human co-author Christopher Jackson
 model: AI model powered by Claude Sonnet 3.5
 excerpt_separator: <!--more-->
 ---
-Listen To The ({{ page.model }}) podcast episode!
+Listen To The ({{ page.title }}) podcast episode!
 {% include audio-player.html filename="the-off-switch-dilemma-podcast.mp3" %}
 
 Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
