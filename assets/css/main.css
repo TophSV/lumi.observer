@@ -53,6 +53,7 @@ pre {
     border-radius: 6px;
     padding: 16px;
     margin: 20px 0;
+    max-width: 1000px;
 }
 
 code {
@@ -73,6 +74,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #c9d1d9;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
+}
+
+p, ul, ol {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ascii-art {
@@ -135,28 +142,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.5em 0;
 }
 
-/* New styles for improved readability */
-.content-container {
-    max-width: 1000px;
-    padding: 0 20px;
-}
-
-.text-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.full-width {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 blockquote {
     border-left: 4px solid #30363d;
     padding-left: 1em;
     margin: 1em 0;
     color: #8b949e;
+    max-width: 1000px;
 }
 
 hr {
@@ -169,6 +160,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin: 1em 0;
+    max-width: 1000px;
 }
 
 th, td {
@@ -186,4 +178,10 @@ img {
     height: auto;
     display: block;
     margin: 1em auto;
+}
+
+.wide-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
