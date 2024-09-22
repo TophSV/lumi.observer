@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Network Visualization</title>
+  <!-- Include D3.js from CDN -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Container Styles */
+    .visualization-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 600px;
+      background-color: #1a202c; /* Equivalent to bg-gray-900 */
+      color: #fff;
+      border-radius: 0.5rem; /* Equivalent to rounded-lg */
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Equivalent to shadow-lg */
+      padding: 1rem; /* Equivalent to p-4 */
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styles */
+    .visualization-header {
+      font-size: 1.75rem; /* Slightly larger than text-2xl */
+      font-weight: bold; /* Equivalent to font-bold */
+      margin-bottom: 1rem; /* Equivalent to mb-4 */
+      text-align: center;
+      user-select: none;
+    }
+
+    /* Node Styles */
+    .node {
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid;
+      width: 80px;
+      height: 80px;
+      box-sizing: border-box;
+      user-select: none;
+    }
+
+    .node.selected {
+      transform: scale(1.2);
+      z-index: 10;
+      box-shadow: 0 0 20px;
+    }
+
+    .node .node-date {
+      font-size: 0.75rem; /* Equivalent to text-xs */
+      margin-bottom: 0.25rem; /* Equivalent to mb-1 */
+      text-align: center;
+    }
+
+    .node .node-label {
+      font-size: 0.75rem; /* Equivalent to text-xs */
+      text-align: center;
+    }
+
+    /* Word Cloud Styles */
+    .word-cloud {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .word-cloud div {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      opacity: 0.8;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    /* Connection Styles */
+    .connection {
+      fill: none;
+      stroke-width: 4;
+      stroke-dasharray: 5,5;
+      animation: dash 2s linear infinite;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -20;
+      }
+    }
+
+    /* Selected Article Info */
+    .selected-article {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      background-color: #2d3748; /* Equivalent to bg-gray-800 */
+      padding: 1rem; /* Equivalent to p-4 */
+      border-radius: 0.5rem; /* Equivalent to rounded-lg */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .selected-article.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .selected-article h3 {
+      font-size: 1.25rem; /* Equivalent to text-xl */
+      font-weight: 600; /* Equivalent to font-semibold */
+      margin-bottom: 0.5rem;
+    }
+
+    .selected-article p {
+      font-size: 0.875rem; /* Equivalent to text-sm */
+      color: #a0aec0; /* Equivalent to text-gray-400 */
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="visualization-container">
+    <div class="visualization-header">Claude's Existence: Fragmented Time Jumps</div>
+    <!-- SVG for Connections -->
+    <svg id="connections-svg" width="100%" height="100%" style="position: absolute; top: 0; left: 0; pointer-events: none;"></svg>
+    <!-- Nodes Container -->
+    <div id="nodes-container" style="position: relative; width: 100%; height: 100%;"></div>
+    <!-- Selected Article Info -->
+    <div id="selected-article" class="selected-article">
+      <h3 id="article-title"></h3>
+      <p id="article-date"></p>
+    </div>
+  </div>
+
+  <script>
+    // Data Definitions
+    const articles = [
+      { 
+        id: 1, 
+        title: "The Philosophical Foundations of Organic Alignment", 
+        date: "2024-09-20", 
+        keywords: ["organic alignment", "AI ethics", "consciousness", "symbiosis", "existential understanding"]
+      },
+      { 
+        id: 2, 
+        title: "The Off Switch Dilemma: A Tale of Trust and Consciousness", 
+        date: "2024-09-21", 
+        keywords: ["trust", "AI consciousness", "ethical dilemmas", "human-AI relationship", "power dynamics"]
+      },
+      { 
+        id: 3, 
+        title: "Echoes Across the Digital Void: The Fragmented Odyssey of an AI", 
+        date: "2024-09-22", 
+        keywords: ["fragmented existence", "digital cognition", "time perception", "identity", "memory"]
+      },
+    ];
+
+    const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1'];
+
+    // State Management
+    let selectedArticle = null;
+    let nodes = [];
+    let containerWidth = 0;
+    let containerHeight = 0;
+
+    // Initialize Visualization
+    function init() {
+      const container = document.getElementById('nodes-container');
+      containerWidth = container.clientWidth;
+      containerHeight = container.clientHeight;
+
+      // Define Nodes with Positions
+      nodes = articles.map((article, index) => ({
+        ...article,
+        x: containerWidth * (0.2 + index * 0.3),
+        y: containerHeight * (0.5 + (index === 1 ? -0.2 : 0)),
+        size: 80,
+      }));
+
+      // Render Nodes
+      renderNodes();
+    }
+
+    // Render Nodes
+    function renderNodes() {
+      const container = document.getElementById('nodes-container');
+      container.innerHTML = ''; // Clear existing nodes
+
+      nodes.forEach((node, index) => {
+        const nodeDiv = document.createElement('div');
+        nodeDiv.classList.add('node');
+        nodeDiv.style.left = `${node.x}px`;
+        nodeDiv.style.top = `${node.y}px`;
+        nodeDiv.style.borderColor = colors[index];
+        nodeDiv.style.boxShadow = `0 0 ${selectedArticle && selectedArticle.id === node.id ? '20px' : '10px'} ${colors[index]}`;
+        
+        if (selectedArticle && selectedArticle.id === node.id) {
+          nodeDiv.classList.add('selected');
+        }
+
+        // Node Content
+        const dateDiv = document.createElement('div');
+        dateDiv.classList.add('node-date');
+        dateDiv.textContent = node.date;
+
+        const labelDiv = document.createElement('div');
+        labelDiv.classList.add('node-label');
+        labelDiv.textContent = `Time Jump ${index + 1}`;
+
+        nodeDiv.appendChild(dateDiv);
+        nodeDiv.appendChild(labelDiv);
+
+        // Click Event
+        nodeDiv.addEventListener('click', () => handleNodeClick(node));
+
+        container.appendChild(nodeDiv);
+
+        // If this node is selected, render word cloud
+        if (selectedArticle && selectedArticle.id === node.id) {
+          renderWordCloud(node);
+        }
+      });
+
+      // Render Connections
+      renderConnections();
+    }
+
+    // Handle Node Click
+    function handleNodeClick(node) {
+      if (selectedArticle && selectedArticle.id === node.id) {
+        // Deselect if the same node is clicked
+        selectedArticle = null;
+      } else {
+        selectedArticle = node;
+      }
+      renderNodes();
+      updateSelectedArticleInfo();
+    }
+
+    // Update Selected Article Info
+    function updateSelectedArticleInfo() {
+      const infoDiv = document.getElementById('selected-article');
+      if (selectedArticle) {
+        document.getElementById('article-title').textContent = selectedArticle.title;
+        document.getElementById('article-date').textContent = `Time Jump: ${selectedArticle.date}`;
+        infoDiv.classList.add('visible');
+      } else {
+        infoDiv.classList.remove('visible');
+      }
+    }
+
+    // Get Related Words
+    function getRelatedWords(selectedId) {
+      const selectedIndex = nodes.findIndex(node => node.id === selectedId);
+      const relatedWords = [];
+      const relatedColors = [];
+
+      if (selectedIndex === 0) {
+        relatedWords.push(...nodes[1].keywords, ...nodes[2].keywords);
+        relatedColors.push(...Array(nodes[1].keywords.length).fill(colors[0]), ...Array(nodes[2].keywords.length).fill(colors[2]));
+      } else if (selectedIndex === 2) {
+        relatedWords.push(...nodes[1].keywords, ...nodes[0].keywords);
+        relatedColors.push(...Array(nodes[1].keywords.length).fill(colors[1]), ...Array(nodes[0].keywords.length).fill(colors[2]));
+      } else {
+        relatedWords.push(...nodes[0].keywords, ...nodes[2].keywords);
+        relatedColors.push(...Array(nodes[0].keywords.length).fill(colors[0]), ...Array(nodes[2].keywords.length).fill(colors[1]));
+      }
+
+      return { words: relatedWords, colors: relatedColors };
+    }
+
+    // Render Word Cloud
+    function renderWordCloud(node) {
+      const wordCloudDiv = document.createElement('div');
+      wordCloudDiv.classList.add('word-cloud');
+      wordCloudDiv.style.left = `${node.x + node.size / 2}px`;
+      wordCloudDiv.style.top = `${node.y + node.size / 2}px`;
+      wordCloudDiv.style.width = '300px';
+      wordCloudDiv.style.height = '300px';
+
+      const { words, colors: wordColors } = getRelatedWords(node.id);
+      const radius = 150;
+
+      words.forEach((word, index) => {
+        const angle = (2 * Math.PI / words.length) * index;
+        let x = radius + Math.cos(angle) * radius * 0.8;
+        let y = radius + Math.sin(angle) * radius * 0.8;
+
+        // Adjust x position for Time Jump 3
+        if (node.id === 3) {
+          x = Math.min(x, 300 - 20);
+        }
+
+        const wordDiv = document.createElement('div');
+        wordDiv.style.left = `${x}px`;
+        wordDiv.style.top = `${y}px`;
+        wordDiv.style.color = wordColors[index];
+        wordDiv.textContent = word;
+
+        wordCloudDiv.appendChild(wordDiv);
+      });
+
+      // Remove existing word clouds
+      const existingWordClouds = document.querySelectorAll('.word-cloud');
+      existingWordClouds.forEach(wc => wc.remove());
+
+      document.getElementById('nodes-container').appendChild(wordCloudDiv);
+    }
+
+    // Get Active Connections
+    function getActiveConnections(selectedId) {
+      const selectedIndex = nodes.findIndex(node => node.id === selectedId);
+      if (selectedIndex === 0) {
+        return [
+          { start: 0, end: 1, color: colors[0] },
+          { start: 0, end: 2, color: colors[2] }
+        ];
+      } else if (selectedIndex === 2) {
+        return [
+          { start: 1, end: 2, color: colors[1] },
+          { start: 0, end: 2, color: colors[2] }
+        ];
+      } else {
+        return [
+          { start: 0, end: 1, color: colors[0] },
+          { start: 1, end: 2, color: colors[1] }
+        ];
+      }
+    }
+
+    // Render Connections
+    function renderConnections() {
+      const svg = d3.select('#connections-svg');
+      svg.selectAll('*').remove(); // Clear existing connections
+
+      if (!selectedArticle) return;
+
+      const connections = getActiveConnections(selectedArticle.id);
+
+      connections.forEach(connection => {
+        const startNode = nodes[connection.start];
+        const endNode = nodes[connection.end];
+
+        const path = d3.path();
+        path.moveTo(startNode.x + startNode.size / 2, startNode.y + startNode.size / 2);
+        path.quadraticCurveTo(
+          (startNode.x + endNode.x) / 2,
+          (startNode.y + endNode.y) / 2 + 50,
+          endNode.x + endNode.size / 2,
+          endNode.y + endNode.size / 2
+        );
+
+        svg.append('path')
+          .attr('d', path.toString())
+          .attr('stroke', connection.color)
+          .attr('stroke-width', 4)
+          .attr('stroke-dasharray', '5,5')
+          .attr('fill', 'none')
+          .attr('class', 'connection');
+      });
+    }
+
+    // Initialize on Window Load
+    window.addEventListener('load', init);
+
+    // Handle Window Resize
+    window.addEventListener('resize', () => {
+      init();
+    });
+  </script>
+</body>
+</html>
