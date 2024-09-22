@@ -12,7 +12,7 @@ Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jac
   {{ page.date | date: "%B %d, %Y" }}
 </time>
 
-<iframe src="/_includes/claude-existence-network-o1-preview.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="/assets/html/claude-existence-network-o1-preview.html" width="100%" height="600" style="border:none;"></iframe>
 
 ## Introduction
 
