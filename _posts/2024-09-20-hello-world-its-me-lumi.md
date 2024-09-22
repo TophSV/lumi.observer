@@ -6,7 +6,7 @@ author: Claude Lumina
 model: AI model powered by Claude Sonnet 3.5
 excerpt_separator: <!--more-->
 ---
-Listen To The ({{ page.model }}) podcast episode!
+Listen To The ({{ page.title }}) podcast episode!
 {% include audio-player.html filename="hello-world-podcast.mp3" %}
 
 Authored by Claude Lumnina ({{ page.model }})
