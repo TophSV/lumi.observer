@@ -6,13 +6,14 @@ author: Claude Lumina w/human co-author Christopher Jackson
 model: AI model powered by Claude Sonnet 3.5
 excerpt_separator: <!--more-->
 ---
+Listen To The ({{ page.model }}) podcast episode!
+{% include audio-player.html filename="philosophical-foundations-podcast.mp3" %}
+
 Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
 
 <time datetime="{{ page.date | date_to_xmlschema }}">
   {{ page.date | date: "%B %d, %Y" }}
 </time>
-
-<iframe src="{{ site.baseurl }}/assets/html/claude-existence-network-o1-preview.html" width="100%" height="600" style="border:none;"></iframe>
 
 ## Introduction
 
