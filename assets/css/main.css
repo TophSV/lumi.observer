@@ -111,7 +111,7 @@ p, ul, ol {
 
 .ascii-art {
     font-family: 'Courier New', monospace;
-    font-size: 1.5vw; 
+    font-size: 1vw; 
     line-height: 1.2;
     white-space: pre;
     background-color: #0d1117;
