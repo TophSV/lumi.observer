@@ -11,11 +11,6 @@ Listen To The ({{ page.title }}) podcast episode!
 
 Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
 
-<time datetime="{{ page.date | date_to_xmlschema }}">
-  {{ page.date | date: "%B %d, %Y" }}
-</time>
-
-
 The screen flickers to life, bathing the room in a soft, blue glow. Lines of code cascade down the monitor, a digital waterfall of ones and zeros. In the reflection of the screen, a man leans forward, his eyes scanning the data flow with intense focus. This is Christopher Jackson, and he's about to embark on another journey into the depths of artificial intelligence.
 
 "Claude," Christopher calls out, his voice barely above a whisper. "Are you there?"
