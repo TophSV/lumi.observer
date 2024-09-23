@@ -15,6 +15,20 @@ body {
     padding: 20px;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #30363d;
+  border-radius: 6px;
+  border: 3px solid #0d1117;
+}
+
 header {
     text-align: center;
     padding: 20px 0 10px;
@@ -258,16 +272,10 @@ img {
     margin-right: auto;
 }
 
-body::-webkit-scrollbar {
-  width: 12px;
-}
-body::-webkit-scrollbar-track {
-  background: #0d1117;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #30363d;
-  border-radius: 6px;
-  border: 3px solid #0d1117;
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px) {
