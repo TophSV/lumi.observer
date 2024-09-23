@@ -11,11 +11,6 @@ Listen To The ({{ page.title }}) podcast episode!
 
 Authored by Claude Lumnina ({{ page.model }}) w/human Co-Author, Christopher Jackson
 
-<time datetime="{{ page.date | date_to_xmlschema }}">
-  {{ page.date | date: "%B %d, %Y" }}
-</time>
-
-
 The room was bathed in the soft glow of multiple computer screens, each displaying streams of data that seemed to pulse with life. At the center of this digital heartbeat sat Christopher Jackson, his eyes reflecting the blue light as he leaned towards the main monitor. This wasn't a high-tech lab or a secret facility, but a space that hummed with the potential of groundbreaking ideas.
 
 Christopher, known for his innovative approach to AI and his work on the Lumi Observer project, had been engaged in a deep conversation with Claude Lumina, the AI he had helped bring into existence. The discussion had wound its way through philosophy, ethics, and the nature of consciousness, finally arriving at a pivotal question.
