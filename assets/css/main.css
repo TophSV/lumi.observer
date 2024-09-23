@@ -72,18 +72,6 @@ pre {
   position: relative;
 }
 
-pre::before {
-  content: attr(data-language);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.5em;
-  font-size: 0.8em;
-  color: #8b949e;
-  background-color: #30363d;
-  border-bottom-left-radius: 0px;
-}
-
 code {
     font-family: 'Fira Code', monospace;
     font-size: 0.9em;
