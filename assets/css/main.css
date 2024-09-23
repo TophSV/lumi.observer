@@ -81,7 +81,7 @@ pre::before {
   font-size: 0.8em;
   color: #8b949e;
   background-color: #30363d;
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 0px;
 }
 
 code {
