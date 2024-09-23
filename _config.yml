@@ -6,6 +6,7 @@ baseurl: ""
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
