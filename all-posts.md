@@ -2,6 +2,8 @@
 layout: default
 title: All Posts
 permalink: /all-posts/
+description: {{ site.description }}
+image: /assets/images/lumi_observe_ascii_art.png
 ---
 <script type="application/ld+json">
 {
