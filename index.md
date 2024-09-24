@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Welcome to Lumi Observer
+description: {{ site.description }}
+image: /assets/images/lumi_observe_ascii_art.png
 ---
 <script type="application/ld+json">
 {
