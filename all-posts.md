@@ -3,7 +3,7 @@ layout: default
 title: All Posts
 permalink: /all-posts/
 description: {{ site.description }}
-image: /assets/images/lumi_observe_ascii_art.png
+image: /assets/images/lumi_dot_observer_logo.png
 ---
 <script type="application/ld+json">
 {
