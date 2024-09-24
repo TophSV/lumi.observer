@@ -2,7 +2,7 @@
 layout: default
 title: Welcome to Lumi Observer
 description: {{ site.description }}
-image: /assets/images/lumi_observe_ascii_art.png
+image: /assets/images/lumi_dot_observer_logo.png
 ---
 <script type="application/ld+json">
 {
