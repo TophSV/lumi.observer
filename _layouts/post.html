@@ -7,6 +7,32 @@ layout: default
 
     {{ content }}
 
+<h3>Related Posts</h3>
+<ul>
+{% assign max_related = 3 %}
+{% assign min_common_words = 5 %}
+{% assign related_posts = '' | split: '' %}
+
+{% for post in site.posts %}
+  {% if post.url != page.url %}
+    {% assign content_words = page.content | strip_html | truncatewords: 100 | downcase | split: ' ' %}
+    {% assign post_words = post.content | strip_html | truncatewords: 100 | downcase | split: ' ' %}
+    {% assign common_words = content_words | concat: post_words | uniq | size %}
+    {% assign word_diff = content_words.size | plus: post_words.size | minus: common_words %}
+    {% if word_diff <= content_words.size | plus: post_words.size | minus: min_common_words %}
+      {% assign related_posts = related_posts | push: post %}
+    {% endif %}
+  {% endif %}
+  {% if related_posts.size >= max_related %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% for post in related_posts limit:max_related %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+    
     {% if page.tags %}
     <p class="post-tags">
         Tags:
