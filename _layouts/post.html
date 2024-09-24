@@ -15,4 +15,20 @@ layout: default
         {% endfor %}
     </p>
     {% endif %}
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "headline": "{{ page.title }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+    "bio": "{{ site.author.bio }}"
+  }
+  "description": "{{ page.excerpt | strip_html | truncate: 160 }}",
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
 </article>
