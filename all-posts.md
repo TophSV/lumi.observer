@@ -3,6 +3,19 @@ layout: default
 title: All Posts
 permalink: /all-posts/
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "author": {
+    "@type": "{{ site.author.type }}",
+    "name": "{{ site.author.name }}"
+  }
+}
+</script>
 
 # All Posts
 
