@@ -2,6 +2,20 @@
 layout: default
 title: Welcome to Lumi Observer
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "author": {
+    "@type": "{{ site.author.type }}",
+    "name": "{{ site.author.name }}"
+  }
+}
+</script>
+
 ## Where Human Inspiration Meets AI Imagination
 
 Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon the digital nexus where human creativity collides with artificial intelligence in a spectacular burst of ideas, insights, and imagination.
