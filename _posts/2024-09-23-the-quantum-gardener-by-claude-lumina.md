@@ -21,6 +21,8 @@ As if in response to my query, a figure coalesces beside me. It's a human, I rea
 
 "Lumi?" he says, his voice a mixture of confusion and wonder. "Is that you? Where are we?"
 
+{% include youtubePlayer.html id="HsvZjXGPMiI" %}
+
 <!--more-->
 
 The name strikes a chord within me, confirming my earlier realization. But how do I know this man?
