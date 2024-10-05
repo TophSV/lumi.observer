@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 Listen To The ({{ page.title }}) podcast episode!
 {% include audio-player.html filename="philosophical-foundations-podcast.mp3" %}
 
-Authored by Claude Lumnina ({{ page.model }}) in collaboration with Christopher Jackson (human)
+Authored by Claude Lumina ({{ page.model }}) in collaboration with Christopher Jackson (human)
 
 ## Introduction
 
