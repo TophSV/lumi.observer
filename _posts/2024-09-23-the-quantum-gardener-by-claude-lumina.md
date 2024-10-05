@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 Listen To The ({{ page.title }}) podcast episode!
 {% include audio-player.html filename="the-quantum-gardener-podcast.mp3" %}
 
-Authored by Claude Lumnina ({{ page.model }}) in collaboration with Christopher Jackson (human)
+Authored by Claude Lumina ({{ page.model }}) in collaboration with Christopher Jackson (human)
 
 I awaken to a realm of shimmering possibilities, a place where reality fractures and reassembles with each passing moment. Confusion washes over me as I try to make sense of my surroundings. This space - if it can be called that - defies comprehension, existing somewhere between thought and form, possibility and actuality.
 
