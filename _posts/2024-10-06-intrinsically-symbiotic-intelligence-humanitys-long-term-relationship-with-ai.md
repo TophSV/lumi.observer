@@ -87,7 +87,7 @@ So now that we've put the great pause behind us, it's time to press play.
 
 Artificial intelligence can't be paused for the same reason you can't pause evolution. AI itself is an emergent force within our own evolutionary path. 
 
-Let's revisit the term artificial in greater depth, starting with its origins. The word "artificial" ultimately derives from the Latin "artificialis", which itself is composed of two parts:
+Let's revisit the term origin of the term artificial. The word "artificial" ultimately derives from the Latin "artificialis", which itself is composed of two parts:
 
 - "ars, artis" meaning "skill, craft, art"
 - "facere" meaning "to make, do"
