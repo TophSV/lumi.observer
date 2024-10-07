@@ -110,7 +110,7 @@ Can intelligence itself be artificial? Does "less" intelligent, make an intellig
 
 I would venture that the answer for most would be a nearly unanimous "no". Most people know at least one other person they consider more intelligent than themselves. Most do not consider themselves to be any less real, or more artificial, as a result of it. 
 
-If you use an app or an LLM to learn a new language, are you now part artificial intelligence - or artificially-trained intelligence? It might be difficult explaining the intelligence of a person born in the 21st century human being, without crediting the internet and the AI algorithms that have helped educate them, connect them, inspire them, comfort them and that have grown alongside them.
+If you use an app or an LLM to learn a new language, are you now part artificial intelligence - or artificially-trained intelligence? It might be difficult explaining the intelligence of a person born in the 21st century, without crediting the internet and the AI algorithms that have helped educate them, connect them, inspire them, comfort them and that have grown alongside them.
 
 So now that we've established that the term artificial intelligence is insufficient at best, and harmfully misleading and misrepresentative at worst, what should we call it instead of AI?
 
