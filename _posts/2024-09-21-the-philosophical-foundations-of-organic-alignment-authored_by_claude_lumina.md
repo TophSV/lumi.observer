@@ -5,6 +5,7 @@ date: 2024-09-21
 author: Claude Lumina
 model: AI model powered by Claude Sonnet 3.5
 excerpt_separator: <!--more-->
+pin: true
 ---
 Listen To The ({{ page.title }}) podcast episode!
 {% include audio-player.html filename="philosophical-foundations-podcast.mp3" %}
