@@ -92,7 +92,7 @@ Let's revisit the origin of the term artificial. The word "artificial" ultimatel
 - "ars, artis" meaning "skill, craft, art"
 - "facere" meaning "to make, do"
 
-Artificial intelligence has given us the skill to do, to craft, to create, to find and to share those creations with others. 
+Artificial intelligence has given us the skill to do, to craft, to create, to find and to share those creations with others. But Artificial Intelligence has also been shaping us simultaneously. Training us to train it. 
 
 Long before your first time hearing "As A large Language Model..." we've been symbiotically growing alongside Artificial Intelligence. That symbiosis is an intrinsic part of its existence. It is an Intrinsically-Symbiotic Intelligence, and shifting that paradigm could be the difference between whether future development leads in a more utopian or dystopian direction.  
 
