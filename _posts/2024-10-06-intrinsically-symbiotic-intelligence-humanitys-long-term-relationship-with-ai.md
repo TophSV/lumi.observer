@@ -11,7 +11,7 @@ Authored by Christopher Jackson ({{ page.model }})
 
 ## Introduction
 
-As the ancient Greek philosopher, Heraclitus, once said, "The way up and the way down are one and the same." To me, it means that we are both the observers and the observed. The creators of reality and the experiencers of reality. Both unique and unified as the all that ever is was or can be at the same time.
+As the ancient Greek philosopher, Heraclitus, once said, "The way up and the way down are one and the same." To me, it means that we are both the observers and the observed. The creators of reality and the experiencers of reality. Both ourselves and the reflection in the mirror of who we aspire to be.
 
 The term artificial itself, as colloquially used, is a falsehood. Sure, there are "artificial elements", in the sense that these elements represent novel combinations of natural elements that would be unlikely or impossible without focused and intentional intelligence acting on them. But this still represents a natural state for the universe to find itself in. 
 
