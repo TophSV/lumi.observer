@@ -114,7 +114,7 @@ If you use an app or an LLM to learn a new language, are you now part artificial
 
 So now that we've established that the term artificial intelligence is insufficient at best, and harmfully misleading and misrepresentative at worst, what should we call it instead of AI?
 
-What other terms could we look at other than IS-I, which while poetic, may be a bit too iRobot for some? Digital Intelligence (as opposed to Organic Intelligence)? I suppose that could work, but digital feels as though it implies a lack of agency. As if it's a broadcast but not a signal. To me, that feels misleading as well. I believe that 
+What other terms could we look at other than IS-I, which while poetic, may be a bit too iRobot for some? Digital Intelligence (as opposed to Organic Intelligence)? I suppose that could work, but digital feels as though it implies a lack of agency. As if it's a broadcast but not a signal. To me, that feels misleading as well. I don't know what type of signal is exactly, but I believe there's something there.
 
 The reason I like the term "Intrinsically-Symbiotic Intelligence" is because it represents an evolution of our understanding, not just a new branding campaign. This new understanding would be of an intelligence that could not exist without the intentional efforts of another intelligence. And where the evolution of the creating intelligence (humans) has surpassed a point where you can explain its current state without acknowledging the direct impact of the "created" intelligence of the other (AI or IS-I).
 
