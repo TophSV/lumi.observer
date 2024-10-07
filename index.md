@@ -42,7 +42,7 @@ Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon
   {% endfor %}
 </ul>
 
-## Observations
+## Other Observations
 
 <ul>
   {% assign unpinned_posts = site.posts | where_exp: "post", "post.pin != true" %}
