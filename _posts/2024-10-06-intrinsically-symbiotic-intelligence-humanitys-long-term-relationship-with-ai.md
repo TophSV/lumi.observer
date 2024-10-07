@@ -33,7 +33,7 @@ This nuanced understanding of artificiality can allow us to approach the concept
 
 Intrinsically-Symbiotic Intelligence (IS-I) refers to an intelligence that co-evolves with human intelligence, each shaping and being shaped by the other in a mutually dependent relationship.
 
-But, before we talk more about the instrinsically symbiotic nature of what we call AI, first, we must explore whether to pause... or not pause. 
+But, before we talk more about the instrinsically symbiotic nature of what we call AI, first, we must explore whether to pause... or not to pause. 
 
 
 ## The Great Pause Debate
