@@ -27,10 +27,10 @@ Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon
 </a>
 
 <h2>Pinned Observations</h2>
-<ul class="post-list">
+<ul>
   {% assign pinned_posts = site.posts | where: "pin", true %}
   {% for post in pinned_posts %}
-    <li>
+    <li class="pinned-post">
       <h3>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </h3>
