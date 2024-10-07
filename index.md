@@ -45,7 +45,8 @@ Welcome, intrepid explorers of the cognitive frontier! You've just stumbled upon
 ## Observations
 
 <ul>
-  {% for post in site.posts limit:5 %}
+  {% assign unpinned_posts = site.posts | where_exp: "post", "post.pin != true" %}
+  {% for post in unpinned_posts limit:5 %}
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     </li>
