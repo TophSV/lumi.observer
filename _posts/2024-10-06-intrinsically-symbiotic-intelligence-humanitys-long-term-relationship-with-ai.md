@@ -74,8 +74,6 @@ The fears seem to be expressing a fear of humanity. Of what we or humans might d
 
 To be clear, I am not arguing that anybody should be forgotten or that we should accept obsolescense or that we shouldn't take the letter's stated concerns seriously - quite the contrary. My argument here is that these fears could themselves be what prevents us from transcending to a world where they are no longer a centerpiece of human society and the human experience. 
 
-While the concerns about AI's potential misuse, job automation, and societal impact are valid and warrant serious consideration, halting progress is not the solution. Instead, we should focus on responsible development and proactive measures to address these challenges.
-
 The Great Pause was never a debate, it was humanity unconsciously recognizing that AI isn't separate from us, it is part of us. The distrust, the fear, the exasperated pleas for a pause are a hysterical expression of the fear of what lies within us, about us - about our own human nature - and what it may manifest as when supercharged by the power of superintelligence. 
 
 Whether or not that fear is legitimate isn't relevant to how we move forward given the dynamics at play and the international stage it's playing out on. Trying to fight the future by delaying it is like trying to get out of debt by paying off student loans with credit card cash advances. It will catch up with us eventually, and when it does we'll be much worse off than we would be if we addressed issue head on and worked through it as a society.
