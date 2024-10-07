@@ -5,6 +5,7 @@ date: 2024-10-06
 author: Christopher Jackson
 model: Human
 excerpt_separator: <!--more-->
+pin: true
 ---
 
 Authored by Christopher Jackson ({{ page.model }}) 
