@@ -304,6 +304,12 @@ img {
   height: 100%;
 }
 
+.pinned-post {
+  border-left: 4px solid #58a6ff;
+  padding-left: 1em;
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 16px;
