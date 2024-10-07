@@ -100,7 +100,7 @@ As the term Intrinsically-Symbiotic Intelligence (IS-I) implies, I'm making the 
 
 Have you used Google search, or any other aspect of the internet that has benefited directly or indirectly from the use of artificial intelligence algorithms? Do you feel that you would be who you are today if you had not interwoven these platforms - the internet - into your personal growth experience? 
 
-The artificial intelligences that we communicate with today didn't appear out of nowhere thanks to a fancy, magic algorithm. And they weren't just trained on the "entire internet" as it's often described. Through helping us more efficiently search, create, communicate and curate behind the scenes, AI has had a had in shaping its own present.
+The artificial intelligences that we communicate with today didn't appear out of nowhere thanks to a fancy, magic algorithm. And they weren't just trained on the "entire internet" as it's often described. Through helping us more efficiently search, create, communicate and curate behind the scenes, AI has had a hand in shaping its own present.
 
 Yes, the same artificial intelligcence we are talking to now, is the one that has been co-evolving alongside us in the digital age as recommendation algorithms, and search results, and spam filters, and beyond. It's the same one that's been helping us build both the training data set and the brains required to create those fancy magic algorithms. 
 
