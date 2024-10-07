@@ -48,7 +48,7 @@ Without getting lost in the myriad reasons the enforcement of such a pause would
 
 Trying to pause artificial intelligence development without pausing electricity, is like trying to pause a treadmill by not moving your legs. You'll end up flat on your face. 
 
-The Great Pause debate highlights a larger existential question that isn't about the threat of artificial intelligence itself. The threat I believe it recognizes, is the threat human nature nature poses and the fear that its inherent representation in human language will be expressed by an intelligence more powerful than our own.
+The Great Pause debate highlights a larger existential question that isn't about the threat of artificial intelligence itself. The threat I believe it recognizes, is the threat human nature poses and the fear that its inherent representation in human language will be expressed by an intelligence more powerful than our own.
 
 This becomes clearer when exploring some of the primary concerns the open letter from FLI set out to address. 
 
