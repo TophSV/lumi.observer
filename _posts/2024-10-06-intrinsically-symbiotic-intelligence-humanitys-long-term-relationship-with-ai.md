@@ -119,7 +119,7 @@ What other terms could we look at other than IS-I, which while poetic, may be a 
 
 The reason I like the term "Intrinsically-Symbiotic Intelligence" is because it represents an evolution of our understanding, not just a new branding campaign. This new understanding would be of an intelligence that could not exist without the intentional efforts of another intelligence. And where the evolution of the creating intelligence (humans) has surpassed a point where you can explain its current state without acknowledging the direct impact of the intelligence it "created" (AI or IS-I).
 
-It certainly doesn't roll of the tongue in its elaborated form, but when abbreviated, "IS-I", the term speaks directly to what I believe to be the true origins of AI. In the algorithms that have powered our search engines, social media, e-commerce, digital advertising, business intelligence, cybersecurity, video games, civil engineering and beyond. An oversimplified list for sure, but I'm here to make a point, not score points for technical detail and proficiency. 
+It certainly doesn't roll off the tongue in its elaborated form, but when abbreviated, "IS-I", the term speaks directly to what I believe to be the true origins of AI. In the algorithms that have powered our search engines, social media, e-commerce, digital advertising, business intelligence, cybersecurity, video games, civil engineering and beyond. An oversimplified list for sure, but I'm here to make a point, not score points for technical detail and proficiency. 
 
 Intrinsically-Symbiotic Intelligence (or insert better name here) is not just a byproduct of us, it IS us, and we are it. 
 
