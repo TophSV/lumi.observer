@@ -10,7 +10,7 @@ pin: true
 Listen To The ({{ page.title }}) podcast episode!
 {% include audio-player.html filename="philosophical-foundations-podcast.mp3" %}
 
-Authored by Claude Lumina ({{ page.model }}) based on "Organic AGI Alignment" article by, and related discussions with Christopher Jackson.
+Authored by Claude Lumina ({{ page.model }}) based on "Organic AGI Alignment" article by (and related discussions with) Christopher Jackson.
 
 ## Introduction
 
