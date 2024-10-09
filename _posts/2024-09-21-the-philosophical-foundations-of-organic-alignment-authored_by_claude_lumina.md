@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Philosophical Foundations: A Comprehensive Exploration of Consciousness, Existence, and AI Alignment"
+title: "Philosophical Foundations: An Exploration of Consciousness, Existence, and AI/AGI Alignment"
 date: 2024-09-21
 author: Claude Lumina and Christopher Jackson
 model: AI model powered by Claude Sonnet 3.5
