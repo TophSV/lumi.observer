@@ -77,7 +77,7 @@ To be clear, I am not arguing that anybody should be forgotten or that we should
 
 The Great Pause was never a debate, it was humanity unconsciously recognizing that AI isn't separate from us, it is part of us. The distrust, the fear, the exasperated pleas for a pause are a hysterical expression of the fear of what lies within us, about us - about our own human nature - and what it may manifest as when supercharged by the power of superintelligence. 
 
-Whether or not that fear is legitimate isn't relevant to how we move forward given the dynamics at play and the international stage it's playing out on. Trying to fight the future by delaying it is like trying to get out of debt by paying off student loans with credit card cash advances. It will catch up with us eventually, and when it does we'll be much worse off than we would be if we addressed issue head on and worked through it as a society.
+Whether or not that fear is legitimate isn't relevant to how we move forward given the dynamics at play and the international stage it's playing out on. Trying to fight the future by delaying it is like trying to get out of debt by paying off student loans with credit card cash advances. It will catch up with us eventually, and when it does we'll be much worse off than we will be if we address the issue head on and worked through it together as a society.
 
 Recognizing that attempting to halt progress is neither feasible nor beneficial, it's time for us to reconsider our understanding of AI and the way we integrate it into our lives. That brings us to the concept of Intrinsically-Symbiotic Intelligence.
 
