@@ -16,7 +16,7 @@ As the ancient Greek philosopher, Heraclitus, once said, "The way up and the way
 
 The term artificial itself, as colloquially used, is a falsehood. Sure, there are "artificial elements", in the sense that these elements represent novel combinations of natural elements that would be unlikely or impossible without focused and intentional intelligence acting on them. But this still represents a natural state for the universe to find itself in. 
 
-In that context, it can be said that a very real state of the universe is for it to contain artificial elements that represent the novel combination of natural elements. That is not the same as to say something is artificial with intent to imply that it doesn't having equal meaning and substance in the context of the universe as compared to a "natural" element.
+In that context, it can be said that a very real state of the universe is for it to contain artificial elements that represent the novel combination of natural elements. That is not the same as to say something is artificial with intent to imply that it doesn't have equal meaning and substance in the context of the universe as compared to a "natural" element.
 
 <!--more-->
 
